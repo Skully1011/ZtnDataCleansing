@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" modified="2023-10-27T21:26:18.309Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="e6aBSJhnx5LSvAYf-tOE" version="22.0.8" type="device">
+  <diagram name="Page-1" id="822b0af5-4adb-64df-f703-e8dfc1f81529">
+    <mxGraphModel dx="664" dy="993" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="H9B1Eej2qxseTfaoOVpK-1" target="H9B1Eej2qxseTfaoOVpK-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610.0000000000032" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="H9B1Eej2qxseTfaoOVpK-2" target="H9B1Eej2qxseTfaoOVpK-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="530" as="sourcePoint" />
+            <mxPoint x="620" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-8" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/web_server.svg;" parent="1" vertex="1">
+          <mxGeometry x="610" y="495" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-9" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/mainframe_host.svg;" parent="1" vertex="1">
+          <mxGeometry x="507" y="590" width="36" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" target="H9B1Eej2qxseTfaoOVpK-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525" y="540" as="sourcePoint" />
+            <mxPoint x="620" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-13" value="&lt;div&gt;Node2&lt;br&gt;&lt;/div&gt;&lt;div&gt;ML ZTN model&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ubuntu 22.04&lt;br&gt;&lt;/div&gt;&lt;div&gt;IPv4: 192.168.1.3&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Running PCAP data collection, analysis, cleansing, training, and control on Nexus&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="420" y="650" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-15" value="&lt;div&gt;Node1&lt;br&gt;&lt;/div&gt;&lt;div&gt;Web Server&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ubuntu 22.04&lt;br&gt;&lt;/div&gt;&lt;div&gt;IPv4: 192.168.1.2&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Running NGINX HTTP web server.&lt;br&gt;&lt;/div&gt;&lt;div&gt;Serving generic web content to clients.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="660" y="505" width="130" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="0lBa1UhVxgN6G9Hg71VC-1" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="190" y="560" width="182.5" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-2" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/workstation_client.svg;" parent="0lBa1UhVxgN6G9Hg71VC-1" vertex="1">
+          <mxGeometry x="140" width="42.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-14" value="&lt;div&gt;Node3&lt;br&gt;&lt;/div&gt;&lt;div&gt;AngelClient&lt;/div&gt;&lt;div&gt;Ubuntu 22.04&lt;br&gt;&lt;/div&gt;&lt;div&gt;IPv4: 192.168.1.4&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Requesting generic web content from Node1 to generate HTTP traffic across network&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="0lBa1UhVxgN6G9Hg71VC-1" vertex="1">
+          <mxGeometry width="110" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="0lBa1UhVxgN6G9Hg71VC-2" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="190" y="390" width="182.5" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="0lBa1UhVxgN6G9Hg71VC-3" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/workstation_client.svg;" vertex="1" parent="0lBa1UhVxgN6G9Hg71VC-2">
+          <mxGeometry x="140" width="42.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0lBa1UhVxgN6G9Hg71VC-4" value="&lt;div&gt;Node4&lt;br&gt;&lt;/div&gt;&lt;div&gt;DevilClient&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ubuntu 22.04&lt;br&gt;&lt;/div&gt;&lt;div&gt;IPv4: 192.168.1.5&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Generating generic HTTP traffic and also executing TCP SYN flooding&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="0lBa1UhVxgN6G9Hg71VC-2">
+          <mxGeometry width="110" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="0lBa1UhVxgN6G9Hg71VC-6" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="467.5" y="420" width="115" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-1" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/router.svg;" parent="0lBa1UhVxgN6G9Hg71VC-6" vertex="1">
+          <mxGeometry x="32.5" y="80" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="H9B1Eej2qxseTfaoOVpK-12" value="&lt;div&gt;NexusNet&lt;/div&gt;&lt;div&gt;Default Gateway: 192.168.10.1&lt;/div&gt;&lt;div&gt;Subnet: 192.168.10.0/24&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="0lBa1UhVxgN6G9Hg71VC-6" vertex="1">
+          <mxGeometry width="115" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0lBa1UhVxgN6G9Hg71VC-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="0lBa1UhVxgN6G9Hg71VC-3" target="H9B1Eej2qxseTfaoOVpK-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="382" y="580" as="sourcePoint" />
+            <mxPoint x="510" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

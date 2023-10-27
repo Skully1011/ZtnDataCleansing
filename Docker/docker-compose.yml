@@ -1,0 +1,59 @@
+version: "3.7"
+services:
+  #router:
+    #image: Nexus
+    #ports:
+    #- 192.168.10.1:8084:80
+    #networks:
+    #- nexusnet
+  webserver:
+    container_name: Node1
+    #depends_on:
+    #  - router
+    image: nginx
+    ports:
+      - "8080:80"
+    networks:
+      nexusnet:
+        ipv4_address: 192.168.10.2
+    tty: true
+    #restart: always # this will restart the container after host reboot
+  ztn:
+    container_name: Node2
+    image: quay.io/jupyter/scipy-notebook
+    ports:
+      - "8081:80"
+    networks:
+      nexusnet:
+        ipv4_address: 192.168.10.3
+  angelclient:
+    container_name: Node3
+    #depends_on:
+    #  - router
+    image: ubuntu
+    ports:
+      - "8082:80"
+    networks:
+      nexusnet:
+        ipv4_address: 192.168.10.4
+    tty: true
+  devilclient:
+    container_name: Node4
+    #depends_on:
+    #  - router
+    image: ubuntu
+    ports:
+      - "8083:80"
+    networks:
+      nexusnet:
+        ipv4_address: 192.168.10.5
+    tty: true
+#volumes:
+  #train_data:
+networks:
+  nexusnet:
+    name: nexusnet
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.10.0/24
