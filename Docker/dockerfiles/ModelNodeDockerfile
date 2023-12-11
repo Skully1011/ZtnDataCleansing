@@ -1,10 +1,17 @@
-# build with `docker build -t ZtnNode:1.0 .`
+# build with `docker build -t model_node -f ModelNodeDockerfile .`
 # get base ubuntu image
-FROM ubuntu
+FROM quay.io/jupyter/scipy-notebook
+
+WORKDIR /home/
+
+# data serialization for models
+RUN pip install joblib
 
 COPY NetworkTraffic/NetworkML_1.ipynb /home/
 
-RUN apt update && apt install -y iputils-ping, python3
-RUN py -m pip install scapy, sklearn, pandas, numpy
+#RUN apt update 
+#RUN apt install -y iputils-ping 
+RUN pip install --upgrade setuptools
+RUN pip install scapy scikit-learn pandas numpy
 
-CMD ["echo", "Hello World!"]
+CMD ["echo", "Hello from node2!"]

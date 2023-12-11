@@ -20,17 +20,19 @@ services:
     #restart: always # this will restart the container after host reboot
   ztn:
     container_name: Node2
-    image: quay.io/jupyter/scipy-notebook
+    #image: quay.io/jupyter/scipy-notebook
+    image: model_node 
     ports:
       - "8081:80"
     networks:
       nexusnet:
         ipv4_address: 192.168.10.3
+    tty: true
   angelclient:
     container_name: Node3
     #depends_on:
     #  - router
-    image: ubuntu
+    image: angel_node
     ports:
       - "8082:80"
     networks:
@@ -41,7 +43,7 @@ services:
     container_name: Node4
     #depends_on:
     #  - router
-    image: ubuntu
+    image: devil_node
     ports:
       - "8083:80"
     networks:
