@@ -21,9 +21,9 @@ def send_http_get(dst, src):
                                                      seq=syn_ack[TCP].ack, ack=syn_ack[TCP].seq + 1, flags='PA') / get_str
         send(http_get)
         
-        return http_get
+        return (syn, syn_ack, ack, http_get)
 
-def send_http_traffic(src: str, dst: str, pkt_cnt: int, filename: str) -> None:
+def send_http_traffic(src: str, dst: str, session_cnt: int, filename: str) -> None:
     """
     src: source IP string "xxx.xxx.xxx.xxx"
     dst: destination IP string "xxx.xxx.xxx.xxx"
@@ -32,8 +32,7 @@ def send_http_traffic(src: str, dst: str, pkt_cnt: int, filename: str) -> None:
     """
     pkts = [] 
     #IP(src=src, dst=dst)/TCP(sport=1234, dport=HTTP_PORT) 
-    for _ in range (pkt_cnt):
-        pkt = send_http_get(src=src, dst=dst)
-        pkts.append(pkt)
-        send(pkt)
+    for _ in range (session_cnt):
+        tcp_http_session = send_http_get(src=src, dst=dst)
+        pkts.append(pkt for pkt in tcp_http_session)
     wrpcap(filename, pkts)
