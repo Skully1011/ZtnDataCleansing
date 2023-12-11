@@ -1,0 +1,10 @@
+# build with `docker build -t ZtnNode:1.0 .`
+# get base ubuntu image
+FROM ubuntu
+
+COPY NetworkTraffic/NetworkML_1.ipynb /home/
+
+RUN apt update && apt install -y iputils-ping, python3
+RUN py -m pip install scapy, sklearn, pandas, numpy
+
+CMD ["echo", "Hello World!"]
