@@ -2,16 +2,11 @@
 # get base ubuntu image
 FROM quay.io/jupyter/scipy-notebook
 
-WORKDIR /home/
-
 # data serialization for models
 RUN pip install joblib
 
 COPY NetworkTraffic/NetworkML_1.ipynb /home/
 
-#RUN apt update 
-#RUN apt install -y iputils-ping 
+# upgrade pip to be able to install scapy
 RUN pip install --upgrade setuptools
 RUN pip install scapy scikit-learn pandas numpy
-
-CMD ["echo", "Hello from node2!"]

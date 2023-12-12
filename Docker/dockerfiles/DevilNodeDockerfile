@@ -1,4 +1,4 @@
-# build with `docker build -t ztn_node -f ZtnNodeDockerfile .`
+# build with `docker build -t devil_node -f DevilNodeDockerfile .`
 # get base ubuntu image
 FROM ubuntu
 
